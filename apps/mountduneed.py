@@ -13,7 +13,7 @@ def app():
     longitude = 144.3056
     m = leafmap.Map(center=[latitude, longitude], zoom=19)
     m.add_basemap("SATELLITE")
-    
+    m.to_streamlit(height=700)
     
 
     if m.user_roi_bounds() is not None:
