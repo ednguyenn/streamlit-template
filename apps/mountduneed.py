@@ -4,7 +4,7 @@ import leafmap.foliumap as leafmap
 
 def app():
 
-    st.title("Mount Duneed")
+    st.title("mount-duneed")
 
     m = leafmap.Map(center=[-38.2426, 144.3056], zoom=19)
     m.add_basemap("SATELLITE")
