@@ -15,7 +15,6 @@ def app():
     m = leafmap.Map(center=[latitude, longitude], zoom=19)
     m.add_basemap("SATELLITE")
     m.to_streamlit(height=700)
-    m.draw_control()
 
     if m.user_roi_bounds() is not None:
         bbox = m.user_roi_bounds()
