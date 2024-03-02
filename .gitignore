@@ -5,6 +5,8 @@ __pycache__/
 private/
 .vscode/
 
+.myenv
+/myenv
 # C extensions
 *.so
 
