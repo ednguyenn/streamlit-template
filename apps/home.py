@@ -4,15 +4,6 @@ import leafmap.foliumap as leafmap
 
 def app():
     st.title("Home")
-
-    st.markdown(
-        """
-say anything
-
-    """
-    )
-
-
     m = leafmap.Map(locate_control=True)
     m.add_basemap("SATELLITE")
     m.to_streamlit(height=700)
