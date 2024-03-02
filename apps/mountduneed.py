@@ -17,6 +17,5 @@ def app():
     m.to_streamlit(height=700)
 
     if m.user_roi_bounds() is not None:
-    bbox = m.user_roi_bounds()
-    else:
-    bbox = [-95.3704, 29.6762, -95.368, 29.6775]
+        bbox = m.user_roi_bounds()
+    else: bbox = [-95.3704, 29.6762, -95.368, 29.6775]
