@@ -1,5 +1,6 @@
 import streamlit as st
 import leafmap.foliumap as leafmap
+import leafmap
 
 from samgeo import tms_to_geotiff, split_raster
 from samgeo.text_sam import LangSAM
@@ -14,7 +15,7 @@ def app():
     m = leafmap.Map(center=[latitude, longitude], zoom=19)
     m.add_basemap("SATELLITE")
     m.to_streamlit(height=700)
-    
+    m.draw_control()
 
     if m.user_roi_bounds() is not None:
         bbox = m.user_roi_bounds()
